@@ -25,6 +25,10 @@
         <header class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
+                    <div class="header-bg">
+                        <img class="bg-one" src="images/bg1.png" alt="bg1">
+                        <img class="bg-two" src="images/bg2.png" alt="bg1">
+                    </div>
                     <a class="navbar-brand" href="#!">
                         <img src="images/icons/logo.svg" alt="logo">
                     </a>
@@ -46,8 +50,7 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button class="btn" type="button" data-bs-target="#exampleModalToggle"
-                                data-bs-toggle="modal">Войти</button>
+                            <button class="btn" type="button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Войти</button>
                         </form>
                     </div>
                 </div>
@@ -62,10 +65,10 @@
                     <div class="news-content-title">
                         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                             <div class="btn-group dropend" role="group">
-                                <button type="button" class=" btn-primary" aria-expanded="false">Главная</button>
-                                <button type="button" class=" btn-primary dropdown-toggle"
+                                <button type="button" aria-expanded="false">Главная</button>
+                                <button type="button" class="dropdown-toggle"
                                     aria-expanded="false"></button>
-                                <button type="button" class="">Новости</button>
+                                <a href="news.html" class="a">Новости</a>
                             </div>
                             <h2>Новости</h2>
                         </div>
@@ -77,7 +80,7 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +90,7 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Опрос: какой набор вы хотели бы видеть на сайте?</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +100,7 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Добавлено три новых персонажа: Карл, Клара и Кара</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +112,7 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Персонажу «Вася» добавлен костюм единорога</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +122,7 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Опрос: какой набор вы хотели бы видеть на сайте?</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -129,10 +132,22 @@
                                 <span class="date">18.05.2023</span>
                                 <h4 class="news-title">Добавлено три новых персонажа: Карл, Клара и Кара</h4>
                                 <div class="text-end">
-                                    <a class="btn btn-two" href="#!">Подробнее</a>
+                                    <button class="btn btn-two last-btn" href="#!">Подробнее</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="numbers">
+                        <img src="images/icons/left.svg" alt="left">
+                        <h5 class="color">1</h5>
+                        <h5>2</h5>
+                        <h5>3</h5>
+                        <h5>...</h5>
+                        <h5>46</h5>
+                        <h5>47</h5>
+                        <h5>48</h5>
+                        <img src="images/icons/right.svg" alt="">
                     </div>
                 </div>
             </section>
@@ -140,34 +155,36 @@
 
         <!-- footer -->
         <footer class="footer">
-            <div class="container d-flex">
-                <div class="footer-box">
-                    <div class="footer-logo">
-                        <img src="images/icons/logo.svg" alt="logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 b-bottom">
+                        <div class="footer-logo">
+                            <img src="images/icons/logo.svg" alt="logo">
+                        </div>
+                        <h4 class="h4">© 2023 Click Story Все права защищены</h4>
                     </div>
-                    <h4 class="h4">© 2023 Click Story Все права защищены</h4>
-                </div>
-                <div class="footer-box">
-                    <h3>Пользователю</h3>
-                    <h4>Правила проекта</h4>
-                    <h4>Личный кабинет</h4>
-                    <h4>Новости</h4>
-                    <h4 class="h-four">Дизайн <a href="#!">Таня Хайден</a></h4>
-                </div>
-                <div class="footer-box">
-                    <h3>Информация</h3>
-                    <h4>Конфиденциальность</h4>
-                    <h4>Пользовательское соглашение</h4>
-                </div>
-                <div class="footer-box">
-                    <h3>Обратная связь</h3>
-                    <h4>Написать в поддержку</h4>
-                    <h4>По поводу рекламы и сотрудничества пишите на <a href="#!">info@click-story.ru</a></h4>
-                    <img src="images/icons/Vector.svg" alt="Vector">
-                    <div class="img-box">
-                        <img src="images/mir.png" alt="mir">
-                        <img src="images/visa.png" alt="visa">
-                        <img src="images/mastercard-img.png" alt="mastercard-img">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 offset-md-1 b-bottom">
+                        <h3>Пользователю</h3>
+                        <h4>Правила проекта</h4>
+                        <h4>Личный кабинет</h4>
+                        <h4>Новости</h4>
+                        <h4 class="h-four">Дизайн <a href="#!">Таня Хайден</a></h4>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 offset-md-1 b-bottom">  
+                        <h3>Информация</h3>
+                        <h4>Конфиденциальность</h4>
+                        <h4>Пользовательское соглашение</h4>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 offset-md-1 b-bottom">
+                        <h3>Обратная связь</h3>
+                        <h4>Написать в поддержку</h4>
+                        <h4>По поводу рекламы и сотрудничества пишите на <a href="#!">info@click-story.ru</a></h4>
+                        <img src="images/icons/Vector.svg" alt="Vector">
+                        <div class="img-box">
+                            <img src="images/mir.png" alt="mir">
+                            <img src="images/visa.png" alt="visa">
+                            <img src="images/mastercard-img.png" alt="mastercard-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,20 +193,21 @@
 
 
     <!-- modal section -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="auth" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered password-modal__dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-main">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Авторизация</h1>
+                    <h1 class="modal-title fs-5" id="auth">Авторизация</h1>
                     <label class="modal-label">E-mail</label>
                     <input class="input" type="email" placeholder="email">
                     <label class="modal-label">Пароль</label>
                     <input class="input parol" type="password" placeholder="пароль">
                     <button class="btn modal-btn">Войти</button>
-                    <a class="modal-a" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" href="#!">Забыли пароль?</a>
+                    <button class="btn-link my-4" aria-hidden="true" data-bs-target="#forget"
+                        data-bs-toggle="modal">Забыли пароль?</button>
                     <h5>Ещё нет аккаунта?</h5>
                     <button class="btn modal-btn" data-bs-target="#exampleModalToggle2"
                         data-bs-toggle="modal">Зарегистрироваться</button>
@@ -197,9 +215,11 @@
             </div>
         </div>
     </div>
+
+    <!-- register -->
     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
         tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered register-modal__dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -208,25 +228,90 @@
                 <div class="modal-main modal-two">
                     <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Регистрация</h1>
                     <div class="d-flex">
-                            <div class="register">
-                                <label class="modal-label">Псевдоним*</label>
-                                <input class="input" type="text" placeholder="Свет Звёзд">
-                                <label class="modal-label">E-mail*</label>
-                                <input class="input" type="email" placeholder="E-mail">
-                                <label class="modal-label">Пароль*</label>
-                                <input class="input" type="password" placeholder="пароль">
-                            </div>
-                            <div class="register ml-30">
-                                <label class="modal-label">Псевдоним*</label>
-                                <input class="input" type="text" placeholder="Свет Звёзд">
-                                <label class="modal-label">E-mail*</label>
-                                <input class="input" type="text" placeholder="E-mail">
-                                <label class="modal-label">Пароль*</label>
-                                <input class="input" type="text" placeholder="пароль">
-                            </div>
+                        <div class="register">
+                            <label class="modal-label">Псевдоним*</label>
+                            <input class="input" type="text" placeholder="Свет Звёзд">
+                            <label class="modal-label">E-mail*</label>
+                            <input class="input" type="email" placeholder="E-mail">
+                            <label class="modal-label">Пароль*</label>
+                            <input class="input" type="password" placeholder="пароль">
+                        </div>
+                        <div class="register ml-30">
+                            <label class="modal-label">Имя</label>
+                            <input class="input" type="text">
+                            <label class="modal-label">Фамилия</label>
+                            <input class="input" type="text">
+                            <label class="modal-label">Промо-код</label>
+                            <input class="input" type="text">
+                        </div>
                     </div>
                     <h6>* Поля, обязательные для заполнения.</h6>
-                    <button class="modal-btn_two" >Back to first</button>
+                    <button class="modal-btn_two">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forget password -->
+    <div class="modal fade" id="forget" aria-hidden="true" data-bs-toggle="modal" aria-labelledby="forget"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered password-modal__dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-main">
+                    <h1 class="modal-title fs-5" id="auth">Забыли пароль?</h1>
+                    <label class="modal-label">Укажите ваш e-mail</label>
+                    <input class="input" type="text">
+                    <button class="btn modal-btn mt-6" aria-hidden="true" data-bs-target="#forget2"
+                        data-bs-toggle="modal">Выслать код на смену пароля</button>
+                    <button class="btn-link mt-6">Войти по номеру телефона</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forget password2 -->
+    <div class="modal fade" id="forget2" aria-hidden="true" data-bs-toggle="modal" aria-labelledby="forget"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered password-modal__dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-main">
+                    <h1 class="modal-title fs-5" id="auth">Забыли пароль?</h1>
+                    <h5 class="mt-6">Введите код, отправленный на ваш e-mail</h5>
+                    <div class="d-flex t-center">
+                        <input class="number" type="text">
+                        <input class="number" type="text">
+                        <input class="number" type="text">
+                        <input class="number" type="text">
+                    </div>
+                    <button class="btn modal-btn mt-6 mb-6" aria-hidden="true" data-bs-target="#changepassword"
+                        data-bs-toggle="modal">Сменить пароль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new passwor -->
+    <div class="modal fade" id="changepassword" aria-hidden="true" data-bs-toggle="modal" aria-labelledby="new-password"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered password-modal__dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-main">
+                    <h1 class="modal-title fs-5" id="auth">Введите новый пароль</h1>
+                    <label class="modal-label">Пароль</label>
+                    <input class="input" type="password" placeholder="пароль">
+                    <label class="modal-label">Подтверждение пароля</label>
+                    <input class="input" type="password" placeholder="пароль">
+                    <button class="btn modal-btn mt-6 mb-6" aria-hidden="true" data-bs-target="#changepassword"
+                        data-bs-toggle="modal">Сменить пароль</button>
                 </div>
             </div>
         </div>
