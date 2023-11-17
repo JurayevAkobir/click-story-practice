@@ -309,7 +309,7 @@
                         <div class="col-6 comments-boxes">
                             <h1 class="box-title">Рецензии</h1>
                             <div class="comment-box">
-                                <button class="border-dashed bd-2">Оставить рецензию</button>
+                                <button class="border-dashed bd-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Оставить рецензию</button>
                                 <div class="comment d-flex">
                                     <div class="person-img">
                                         <img src="images/icons/person.svg" alt="person">
@@ -413,6 +413,23 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal fade news-2" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-main text-center">
+                    <h2 class="news-title">Оставить рецензию</h2>
+                    <input class="input mb-6" type="text" placeholder="Заголовок">
+                    <input type="text" class="input mb-6" placeholder="Описание">
+                    <button class="btn news-modal_btn" data-bs-toggle="modal">Отправить</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- bootsrap js -->
