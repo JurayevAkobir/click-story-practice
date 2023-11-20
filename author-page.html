@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Story</title>
+    <!-- inter font css -->
+    <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <!-- bootsrap css -->
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+
+
+        <!-- header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="header-bg">
+                        <img class="bg-one" src="images/bg1.png" alt="bg1">
+                        <img class="bg-two" src="images/bg2.png" alt="bg1">
+                    </div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/icons/logo.svg" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#!">Истории</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html">Посмотреть историю</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="author-page.html">После</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <button class="btn" type="button">Создать историю</button>
+                            </form>
+                            <li class="nav-item d-flex align-items-center ml-6">
+                                <img src="images/icons/book.svg" alt="book">
+                                <a class="nav-link" aria-current="page" href="notification.html">Уведомлениее</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <img src="images/icons/qungiroq.svg" alt="qung'iroq">
+                                <a class="nav-link" href="#!">15</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center ">
+                                <img src="images/icons/quartz.svg" alt="quartz">
+                                <a class="nav-link" href="#!">250</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <img src="images/icons/person.svg" alt="person">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+
+            <!-- author -->
+
+            <section class="author">
+                <div class="container">
+                    <div class="author-box d-flex ">
+                        <div class="author-about">
+                            <img src="images/icons/person.svg" alt="person">
+                            <h4 class="author-name">Andy Crow</h4>
+                            <div class="d-flex">
+                                <div class="box">
+                                    <h4>145</h4>
+                                    <p>Подписчики</p>
+                                </div>
+                                <div class="box">
+                                    <h4>5</h4>
+                                    <p>Подписки</p>
+                                </div>
+                                <div class="box">
+                                    <h4>1</h4>
+                                    <p>Истории</p>
+                                </div>
+                                <div class="box">
+                                    <h4>3</h4>
+                                    <p>Достижения</p>
+                                </div>
+                            </div>
+                            <div class="medal">
+                                <img src="images/icons/medal.svg" alt="medal">
+                                <img src="images/icons/medal.svg" alt="medal">
+                                <img src="images/icons/medal.svg" alt="medal">
+                            </div>
+                        </div>
+                        <div class="nuqta">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                                    fill="#fff" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portal author-tabs">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item nav-item2" role="presentation">
+                            <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                                type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Истории</button>
+                        </li>
+                        <li class="nav-item nav-item2" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Черновики (3)</button>
+                        </li>
+                        <li class="nav-item nav-item2" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Мои персонажи</button>
+                        </li>
+                        <li class="nav-item nav-item2" role="presentation">
+                            <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Об
+                                авторе</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="row author-row">
+                                <div class="col-4 col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-12 big-img-2">
+                                    <img class="img1" src="images/img1.png" alt="img1">
+                                    <div class="boy-girl_images">
+                                        <img class="girl-img" src="images/girl-2.png" alt="girl">
+                                        <img class="boy-img" src="images/boy.png" alt="boy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-xxl-8 col-xl-8 col-lg-12 col-md-10 col-12 portal-texts">
+                                    <div class="portal-title portal-title_author">
+                                        <div class="d-flex align-items-center">
+                                            <h2>Твой новый мир</h2>
+                                            <div class="btn-link-box d-flex">
+                                                <h4 class="btn-link">Продвигать</h4>
+                                                <h4 class="btn-link" data-bs-target="#exampleModalToggle"
+                                                    data-bs-toggle="modal">Редактировать</h4>
+                                            </div>
+                                        </div>
+                                        <button class="blue-btn">Фэнтэзи</button>
+                                        <button class="blue-btn">Сказка</button>
+                                        <p>Есть над чем задуматься: предприниматели в сети интернет, инициированные
+                                            исключительно синтетически, своевременно верифицированы. Безусловно,
+                                            синтетическое
+                                            тестирование говорит о возможностях экономической целесообразности
+                                            принимаемых
+                                            решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                            инициированные
+                                            исключительно синтетически, объективно рассмотрены соответствующими
+                                            инстанциями.
+                                        </p>
+                                        <div class="like-comentary-boxes d-flex">
+                                            <div class="like-comentary d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/like.svg" alt="like">
+                                                    <h5>10</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/comentary.svg" alt="comentary">
+                                                    <h5>15</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/save.svg" alt="like">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/eye.svg" alt="eye">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/time.svg" alt="like">
+                                                    <h5>15 мин.</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <form class="d-flex">
+                                                    <button class="btn" type="button">Создать историю</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row author-row">
+                                <div class="col-4 col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-12 big-img-2">
+                                    <img class="img1" src="images/img1.png" alt="img1">
+                                    <div class="boy-girl_images">
+                                        <img class="girl-img" src="images/girl-2.png" alt="girl">
+                                        <img class="boy-img" src="images/boy.png" alt="boy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-xxl-8 col-xl-8 col-lg-12 col-md-10 col-12 portal-texts">
+                                    <div class="portal-title portal-title_author">
+                                        <div class="d-flex align-items-center">
+                                            <h2>Твой новый мир</h2>
+                                            <div class="btn-link-box d-flex">
+                                                <h4 class="btn-link">Продвигать</h4>
+                                                <h4 class="btn-link" data-bs-target="#exampleModalToggle"
+                                                    data-bs-toggle="modal">Редактировать</h4>
+                                            </div>
+                                        </div>
+                                        <button class="blue-btn">Фэнтэзи</button>
+                                        <button class="blue-btn">Сказка</button>
+                                        <p>Есть над чем задуматься: предприниматели в сети интернет, инициированные
+                                            исключительно синтетически, своевременно верифицированы. Безусловно,
+                                            синтетическое
+                                            тестирование говорит о возможностях экономической целесообразности
+                                            принимаемых
+                                            решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                            инициированные
+                                            исключительно синтетически, объективно рассмотрены соответствующими
+                                            инстанциями.
+                                        </p>
+                                        <div class="like-comentary-boxes d-flex">
+                                            <div class="like-comentary d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/like.svg" alt="like">
+                                                    <h5>10</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/comentary.svg" alt="comentary">
+                                                    <h5>15</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/save.svg" alt="like">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/eye.svg" alt="eye">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/time.svg" alt="like">
+                                                    <h5>15 мин.</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <form class="d-flex">
+                                                    <button class="btn" type="button">Создать историю</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="row author-row">
+                                <div class="col-4 col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-12 big-img-2">
+                                    <img class="img1" src="images/img1.png" alt="img1">
+                                    <div class="boy-girl_images">
+                                        <img class="girl-img" src="images/girl-2.png" alt="girl">
+                                        <img class="boy-img" src="images/boy.png" alt="boy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-xxl-8 col-xl-8 col-lg-12 col-md-10 col-12 portal-texts">
+                                    <div class="portal-title portal-title_author">
+                                        <div class="d-flex align-items-center">
+                                            <h2>Твой новый мир</h2>
+                                            <div class="btn-link-box d-flex">
+                                                <h4 class="btn-link">Продвигать</h4>
+                                                <h4 class="btn-link">Редактировать</h4>
+                                            </div>
+                                        </div>
+                                        <button class="blue-btn">Фэнтэзи</button>
+                                        <button class="blue-btn">Сказка</button>
+                                        <p>Есть над чем задуматься: предприниматели в сети интернет, инициированные
+                                            исключительно синтетически, своевременно верифицированы. Безусловно,
+                                            синтетическое
+                                            тестирование говорит о возможностях экономической целесообразности
+                                            принимаемых
+                                            решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                            инициированные
+                                            исключительно синтетически, объективно рассмотрены соответствующими
+                                            инстанциями.
+                                        </p>
+                                        <div class="like-comentary-boxes d-flex">
+                                            <div class="like-comentary d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/like.svg" alt="like">
+                                                    <h5>10</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/comentary.svg" alt="comentary">
+                                                    <h5>15</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/save.svg" alt="like">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/eye.svg" alt="eye">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/time.svg" alt="like">
+                                                    <h5>15 мин.</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <form class="d-flex">
+                                                    <button class="btn" type="button">Создать историю</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row author-row">
+                                <div class="col-4 col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-12 big-img-2">
+                                    <img class="img1" src="images/img1.png" alt="img1">
+                                    <div class="boy-girl_images">
+                                        <img class="girl-img" src="images/girl-2.png" alt="girl">
+                                        <img class="boy-img" src="images/boy.png" alt="boy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-xxl-8 col-xl-8 col-lg-12 col-md-10 col-12 portal-texts">
+                                    <div class="portal-title portal-title_author">
+                                        <div class="d-flex align-items-center">
+                                            <h2>Твой новый мир</h2>
+                                            <div class="btn-link-box d-flex">
+                                                <h4 class="btn-link">Продвигать</h4>
+                                                <h4 class="btn-link">Редактировать</h4>
+                                            </div>
+                                        </div>
+                                        <button class="blue-btn">Фэнтэзи</button>
+                                        <button class="blue-btn">Сказка</button>
+                                        <p>Есть над чем задуматься: предприниматели в сети интернет, инициированные
+                                            исключительно синтетически, своевременно верифицированы. Безусловно,
+                                            синтетическое
+                                            тестирование говорит о возможностях экономической целесообразности
+                                            принимаемых
+                                            решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                            инициированные
+                                            исключительно синтетически, объективно рассмотрены соответствующими
+                                            инстанциями.
+                                        </p>
+                                        <div class="like-comentary-boxes d-flex">
+                                            <div class="like-comentary d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/like.svg" alt="like">
+                                                    <h5>10</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/comentary.svg" alt="comentary">
+                                                    <h5>15</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/save.svg" alt="like">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/eye.svg" alt="eye">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/time.svg" alt="like">
+                                                    <h5>15 мин.</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <form class="d-flex">
+                                                    <button class="btn" type="button">Создать историю</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            <div class="row author-row">
+                                <div class="col-4 col-xxl-4 col-xl-4 col-lg-12 col-md-6 col-12 big-img-2">
+                                    <img class="img1" src="images/img1.png" alt="img1">
+                                    <div class="boy-girl_images">
+                                        <img class="girl-img" src="images/girl-2.png" alt="girl">
+                                        <img class="boy-img" src="images/boy.png" alt="boy">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-xxl-8 col-xl-8 col-lg-12 col-md-10 col-12 portal-texts">
+                                    <div class="portal-title portal-title_author">
+                                        <div class="d-flex align-items-center">
+                                            <h2>Твой новый мир</h2>
+                                            <div class="btn-link-box d-flex">
+                                                <h4 class="btn-link">Продвигать</h4>
+                                                <h4 class="btn-link">Редактировать</h4>
+                                            </div>
+                                        </div>
+                                        <button class="blue-btn">Фэнтэзи</button>
+                                        <button class="blue-btn">Сказка</button>
+                                        <p>Есть над чем задуматься: предприниматели в сети интернет, инициированные
+                                            исключительно синтетически, своевременно верифицированы. Безусловно,
+                                            синтетическое
+                                            тестирование говорит о возможностях экономической целесообразности
+                                            принимаемых
+                                            решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                            инициированные
+                                            исключительно синтетически, объективно рассмотрены соответствующими
+                                            инстанциями.
+                                        </p>
+                                        <div class="like-comentary-boxes d-flex">
+                                            <div class="like-comentary d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/like.svg" alt="like">
+                                                    <h5>10</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/comentary.svg" alt="comentary">
+                                                    <h5>15</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/save.svg" alt="like">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/eye.svg" alt="eye">
+                                                    <h5>25</h5>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="images/icons/time.svg" alt="like">
+                                                    <h5>15 мин.</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <form class="d-flex">
+                                                    <button class="btn" type="button">Создать историю</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 b-bottom">
+                        <div class="footer-logo">
+                            <img src="images/icons/logo.svg" alt="logo">
+                        </div>
+                        <h4 class="h4">© 2023 Click Story Все права защищены</h4>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5 offset-md-1 b-bottom">
+                        <h3>Пользователю</h3>
+                        <h4>Правила проекта</h4>
+                        <h4>Личный кабинет</h4>
+                        <h4>Новости</h4>
+                        <h4 class="h-four">Дизайн <a href="#!">Таня Хайден</a></h4>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 offset-md-1 b-bottom">
+                        <h3>Информация</h3>
+                        <h4>Конфиденциальность</h4>
+                        <h4>Пользовательское соглашение</h4>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 b-bottom">
+                        <h3>Обратная связь</h3>
+                        <h4>Написать в поддержку</h4>
+                        <h4>По поводу рекламы и сотрудничества пишите на <a href="#!">info@click-story.ru</a></h4>
+                        <img src="images/icons/Vector.svg" alt="Vector">
+                        <div class="img-box">
+                            <img src="images/mir.png" alt="mir">
+                            <img src="images/visa.png" alt="visa">
+                            <img src="images/mastercard-img.png" alt="mastercard-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade news-2" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-main text-center modal-author">
+                    <h2 class="news-title">Продвижение</h2>
+                    <div class="d-flex modal-texts">
+                        <div class="modal-texts">
+                            <h5>1 день</h5>
+                            <div class="d-flex">
+                                <img src="images/icons/quartz.svg" alt="quartz">
+                                <h4>390</h4>
+                            </div>
+                        </div>
+                        <button class="btn news-modal_btn" data-bs-toggle="modal">Отправить</button>
+                    </div>
+                    <div>
+                        <div class="d-flex modal-texts">
+                        <div class="modal-texts">
+                            <h5>1 день</h5>
+                            <div class="d-flex">
+                                <img src="images/icons/quartz.svg" alt="quartz">
+                                <h4>390</h4>
+                            </div>
+                        </div>
+                        <button class="btn news-modal_btn" data-bs-toggle="modal">Отправить</button>
+                    </div>
+                    </div>
+                    <div class="d-flex modal-texts">
+                        <div class="modal-texts">
+                            <h5>1 день</h5>
+                            <div class="d-flex">
+                                <img src="images/icons/quartz.svg" alt="quartz">
+                                <h4>390</h4>
+                            </div>
+                        </div>
+                        <button class="btn news-modal_btn" data-bs-toggle="modal">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootsrap js -->
+    <script src="libs/bootstrap.min.js"></script>
+</body>
+
+</html>
